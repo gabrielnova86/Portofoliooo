@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Nova I – Portfolio</title>
+  <link rel="stylesheet" href="style.css?v=5" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">G</span>
+        <span class="logo-text">Gabriel.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link">Project</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+         <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
+        <li><a href="#contact" class="nav-link nav-contact-btn">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO + ABOUT ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-blob blob-1"></div>
+    <div class="hero-bg-blob blob-2"></div>
+
+    <!-- Hero text content -->
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <p class="hero-greeting">Hello, My name is...</p>
+        <h1 class="hero-name">Gabriel Nova I</h1>
+        <div class="hero-badge">Say Hello! 👋</div>
+        <p class="hero-desc">
+          I'm a Web Developer and UI/UX Designer based in Tengaran, Indonesia.<br />
+          I work hard to build beautiful web applications using clean code and designs that focus on the user.
+        </p>
+        <p class="hero-role"><span id="typed-text"></span><span class="cursor">|</span></p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">1 Year</span>
+            <span class="stat-label">Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Project Complete</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">67+</span>
+            <span class="stat-label">Happy Client</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-anim-wrap">
+  <canvas id="heroCanvas"></canvas>
+</div>
+    </div>
+
+    
+
+
+
+    <!-- About card — menyatu di dalam hero, mengambang ke Skills -->
+    <div class="about-float-wrap" id="about">
+      <div class="container">
+        <div class="about-inner reveal">
+          <div class="about-photo">
+            <div class="about-img-wrap">
+              <a href="nova foto.jpg" class="about-img-link" target="_blank">
+                <img
+                  src="nova foto.jpg"
+                  alt="Gabriel Nova I"
+                  class="about-img"
+                  onerror="this.parentElement.classList.add('img-fallback')"
+                />
+              </a>
+            </div>
+            <div class="about-social">
+              <a href="#" class="social-dot"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-dot"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/nnovaaell?igsh=NjdtbGZzbzl5ZmVq" class="social-dot purple"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-dot"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-dot"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+
+          <div class="about-text reveal delay-1">
+            <span class="section-eyebrow">Get To Know</span>
+            <h2 class="section-title">Who Am I ?</h2>
+            <p>
+              I am a professional web developer. I design and build services for customers, focusing on creating stylish, modern websites and online stores. My passion is to design good digital user experiences.
+            </p>
+            <p>
+              I bring ideas to life using modern coding tools, and I focus on making high-quality digital results that look perfect on any screen size.
+            </p>
+            <div class="about-actions">
+              <a href="Recount text.jpg" target="_blank" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> Recount Text</a>
+              <a href="cv ipass.jpg" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container skills-inner">
+      <div class="skills-left reveal">
+        <span class="section-eyebrow">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+        <p>
+          I have learned many different skills in web development, from basic code languages to dynamic programming and modern design tools. Here is a list of the technical skills that I am good at.
+        </p>
+      </div>
+
+      <div class="skills-right reveal delay-1">
+        <div class="skill-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">HTML</span>
+                <span class="skill-percent">50%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="50"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">CSS</span>
+                <span class="skill-percent">35%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="35"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">10%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="10"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon py-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-percent">10%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="10"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card skill-card-full">
+            <div class="skill-icon bs-icon"><i class="fa-brands fa-bootstrap"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-percent">20%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="20"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PORTFOLIO ═══════════════════════ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow center">My Work</span>
+        <h2 class="section-title center">Recent Project</h2>
+        <p class="section-sub">Explore some of my recent web development and design projects,<br />showing my ability to create websites that are easy for people to use.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img-wrap">
+            <a href="Hero1.jpg" class="portfolio-img-link" target="_blank">
+              <img
+                src="Hero1.jpg"
+                alt="Limbah Yang Berkah"
+                class="portfolio-img"
+                onerror="this.closest('.portfolio-img-link').classList.add('img-fallback'); this.closest('.portfolio-img-link').setAttribute('data-icon','🌿')"
+              />
+            </a>
+            <div class="portfolio-overlay">
+              <a href="https://gabrielnova86.github.io/KolaborasiS1/Index.html" class="btn btn-primary btn-sm">View <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Limbah Menjadi Berkah</h3>
+            <p>A platform made for turning environmental waste into useful things through new and creative recycling programs.</p>
+            <a href="https://gabrielnova86.github.io/KolaborasiS1/Index.html" class="portfolio-link">View <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal delay-1">
+          <div class="portfolio-img-wrap">
+            <a href="Hero2.jpg" class="portfolio-img-link" target="_blank">
+              <img
+                src="Hero2.jpg"
+                alt="Sistem Manajemen Siswa"
+                class="portfolio-img"
+                onerror="this.closest('.portfolio-img-link').classList.add('img-fallback'); this.closest('.portfolio-img-link').setAttribute('data-icon','🎓')"
+              />
+            </a>
+            <div class="portfolio-overlay">
+              <a href="https://gabrielnova86.github.io/Landingpagesekolah/Tugas2.html" class="btn btn-primary btn-sm">View <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Sistem Manajemen Siswa</h3>
+            <p>A complete student management system designed to help schools organize daily tasks and improve how they work.</p>
+            <a href="https://gabrielnova86.github.io/Landingpagesekolah/Tugas2.html" class="portfolio-link">View <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal delay-2">
+          <div class="portfolio-img-wrap">
+            <a href="Hero3.jpg" class="portfolio-img-link" target="_blank">
+              <img
+                src="Hero3.jpg"
+                alt="Environs"
+                class="portfolio-img"
+                onerror="this.closest('.portfolio-img-link').classList.add('img-fallback'); this.closest('.portfolio-img-link').setAttribute('data-icon','🌿')"
+              />
+            </a>
+            <div class="portfolio-overlay">
+              <a href="https://gabrielnova86.github.io/environment-tugas3/" class="btn btn-primary btn-sm">View <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Environs</h3>
+            <p>A green landing page showing good practices to protect nature and save the environment for the future.</p>
+            <a href="https://gabrielnova86.github.io/environment-tugas3/" class="portfolio-link">View <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal delay-1">
+          <div class="portfolio-img-wrap">
+            <a href="Hero4.jpg" class="portfolio-img-link" target="_blank">
+              <img
+                src="Hero4.jpg"
+                alt="Luxury Cars"
+                class="portfolio-img"
+                onerror="this.closest('.portfolio-img-link').classList.add('img-fallback'); this.closest('.portfolio-img-link').setAttribute('data-icon','🚗')"
+              />
+            </a>
+            <div class="portfolio-overlay">
+              <a href="https://gabrielnova86.github.io/tugas4-landingpage/" class="btn btn-primary btn-sm">View <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Luxury Cars</h3>
+            <p>A clean and premium website built to show high-quality luxury cars with beautiful and elegant design styles.</p>
+            <a href="https://gabrielnova86.github.io/tugas4-landingpage/" class="portfolio-link">View <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal delay-2">
+          <div class="portfolio-img-wrap">
+            <a href="Hero5.jpg" class="portfolio-img-link" target="_blank">
+              <img
+                src="Hero5.jpg"
+                alt="Gadget &amp; Tech"
+                class="portfolio-img"
+                onerror="this.closest('.portfolio-img-link').classList.add('img-fallback'); this.closest('.portfolio-img-link').setAttribute('data-icon','💻')"
+              />
+            </a>
+            <div class="portfolio-overlay">
+              <a href="https://gabrielnova86.github.io/landingpage-gadget-tech-futuristikcity/" class="btn btn-primary btn-sm">View <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Gadget &amp; Tech</h3>
+            <p>A modern online store page showing the newest tech gadgets and modern smart devices for daily use.</p>
+            <a href="https://gabrielnova86.github.io/landingpage-gadget-tech-futuristikcity/" class="portfolio-link">View <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+  <section class="services section" id="services">
+    <div class="container services-inner">
+      <div class="services-left reveal">
+        <span class="section-eyebrow">What I Offer</span>
+        <h2 class="section-title">What I do?</h2>
+        <p>
+          I provide complete digital services made just for what you need. From designing easy-to-use interfaces to building strong web applications, I make sure every project works well and looks beautiful.
+        </p>
+        <p>
+          My main goal is to connect what users want with what your business needs by making smooth and fast digital experiences for everyone.
+        </p>
+        <a href="#contact" class="btn btn-primary">Contact Me!</a>
+      </div>
+
+      <div class="services-right">
+        <div class="service-card reveal delay-1">
+          <div class="service-icon-wrap purple-bg">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <div class="service-text">
+            <h3>User Experience (UX)</h3>
+            <p>Creating good and helpful experiences for users by focusing on making things easy to use, easy to access, and satisfying.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon-wrap purple-border">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div class="service-text">
+            <h3>User Interface (UI)</h3>
+            <p>Designing beautiful and interactive looks that match your brand style and catch the attention of your visitors.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-3">
+          <div class="service-icon-wrap purple-border">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="service-text">
+            <h3>Web Development</h3>
+            <p>Building fast and flexible websites that look good on all screens using modern tools to bring your ideas to life on the web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CTA ═══════════════════════ -->
+  <section class="cta-section">
+    <div class="cta-bg-blob"></div>
+    <div class="container cta-inner reveal">
+      <h2>Do you have a Project Idea?<br />Let's discuss your project!</h2>
+      <p>Whether you need a completely new website or want to fix and update an old one,<br />I am ready to help you turn your ideas into reality.</p>
+      <a href="#contact" class="btn btn-cta">Let's work Together <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TESTIMONIAL ═══════════════════════ -->
+  <section class="testimonial section" id="testimonial">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow center">Reviews</span>
+        <h2 class="section-title center">Testimonial</h2>
+        <p class="section-sub">Read what my clients and partners have to say about my hard work,<br />and the quality of the projects that I have finished.</p>
+      </div>
+
+      <div class="testimonial-card reveal delay-1">
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p class="testimonial-text">
+          "Gabriel is a very good developer who really understands how to balance design and how a website works. He pays close attention to details and always delivers high-quality work on time. This made our project a huge success. Highly recommended!"
+        </p>
+
+            <strong>Esther Howard</strong>
+            <span>Managing Director, ABC company</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+
+      <div class="contact-info reveal">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Let's discuss your Project</h2>
+        <p>I am currently available for freelance work and open to new projects. Feel free to contact me if you have a project idea or just want to say hello!</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-label">Address</span>
+              <span class="contact-value">Tengaran, Indonesia</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">gabrielnova1011@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-icon-wrap"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Telephone</span>
+              <span class="contact-value">+62-831-9502-3332</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="#" class="csoc-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="csoc-btn"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/nnovaaell?igsh=NjdtbGZzbzl5ZmVq" class="csoc-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="csoc-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="csoc-btn"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal delay-2">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name*</label>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label>Email*</label>
+            <input type="email" placeholder="your@gmail.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Location*</label>
+            <input type="text" placeholder="City, Country" />
+          </div>
+          <div class="form-group">
+            <label>Budget*</label>
+            <input type="text" placeholder="Your budget" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Subject*</label>
+          <input type="text" placeholder="Project subject" />
+        </div>
+        <div class="form-group full">
+          <label>Message*</label>
+          <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn btn-primary btn-submit">Submit <i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">G</span>
+        <span class="logo-text">Gabriel.</span>
+      </a>
+      <ul class="footer-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer-copy">Copyright © 2025 Picto. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
